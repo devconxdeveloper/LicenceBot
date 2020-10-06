@@ -1,0 +1,212 @@
+{
+  "products": {
+    "kbc": {
+      "name": "Keybind Configuration System",
+      "hubid": "kbc",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        },
+        "172051854": {
+          "status": true,
+          "userid": "172051854"
+        },
+        "1290036236": {
+          "status": true,
+          "userid": "1290036236"
+        }
+      }
+    },
+    "halop": {
+      "name": "Halo Pack",
+      "hubid": "halop",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        },
+        "30226283": {
+          "status": true,
+          "userid": "30226283"
+        },
+        "80331361": {
+          "status": true,
+          "userid": "80331361"
+        },
+        "443334104": {
+          "status": true,
+          "userid": "443334104"
+        }
+      }
+    },
+    "pel": {
+      "name": "Blizzard Pelican",
+      "hubid": "pel",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        },
+        "443334104": {
+          "status": true,
+          "userid": "443334104"
+        }
+      }
+    },
+    "fal": {
+      "name": "Blizzard Falcon",
+      "hubid": "fal",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        },
+        "443334104": {
+          "status": true,
+          "userid": "443334104"
+        }
+      }
+    },
+    "vh-3d": {
+      "name": "Blizzard Marine One",
+      "hubid": "vh-3d",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        },
+        "443334104": {
+          "status": true,
+          "userid": "443334104"
+        }
+      }
+    },
+    "adminpanel": {
+      "name": "Custom Admin Panel",
+      "hubid": "adminpanel",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        }
+      }
+    },
+    "ch-124": {
+      "name": "Canadian Sea King",
+      "hubid": "ch-124",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        },
+        "443334104": {
+          "status": true,
+          "userid": "443334104"
+        }
+      }
+    },
+    "targetsym": {
+      "name": "Target System",
+      "hubid": "targetsym",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        }
+      }
+    },
+    "humvee": {
+      "name": "HMMWVCOMBAT",
+      "hubid": "humvee",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        },
+        "172051854": {
+          "status": true,
+          "userid": "172051854"
+        },
+        "964300907": {
+          "status": true,
+          "userid": "964300907"
+        }
+      }
+    },
+    "horn": {
+      "name": "Blizzard Hornet",
+      "hubid": "horn",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        },
+        "443334104": {
+          "status": true,
+          "userid": "443334104"
+        }
+      }
+    },
+    "phan": {
+      "name": "Blizzard Phantom",
+      "hubid": "phan",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        },
+        "443334104": {
+          "status": true,
+          "userid": "443334104"
+        }
+      }
+    },
+    "morphmenusw": {
+      "name": "Star Wars Morph Menu",
+      "hubid": "morphmenusw",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        },
+        "991996748": {
+          "status": true,
+          "userid": 991996748
+        },
+        "1290036236": {
+          "status": true,
+          "userid": "1290036236"
+        }
+      }
+    },
+    "force": {
+      "name": "Force Powers",
+      "hubid": "force",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        },
+        "991996748": {
+          "status": true,
+          "userid": 991996748
+        },
+        "1290036236": {
+          "status": true,
+          "userid": "1290036236"
+        }
+      }
+    },
+    "clearui": {
+      "name": "Clearance UI",
+      "hubid": "clearui",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        }
+      }
+    }
+  }
+}
