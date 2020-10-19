@@ -1,7 +1,3 @@
-
-// Zing Tech Licensing 2.0
-// axivl
-
 const fs = require('fs');
 const express = require('express');
 const app = express()
