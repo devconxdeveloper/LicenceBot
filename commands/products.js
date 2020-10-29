@@ -1,7 +1,7 @@
 const prefix = process.env.PREFIX
 const Discord = require("discord.js");
 const axios = require("axios");
-const editJsonFile = require('edit-json-file');
+const editJsonFile = require('read-json-file');
 
 module.exports = {
         name: 'products',
