@@ -207,6 +207,16 @@
           "id": "1"
         }
       }
+    },
+    "carspawner": {
+      "name": "Car Spawner System",
+      "hubid": "carspawner",
+      "users": {
+        "1": {
+          "status": true,
+          "id": "1"
+        }
+      }
     }
   }
 }
