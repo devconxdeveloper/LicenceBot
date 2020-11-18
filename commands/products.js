@@ -15,7 +15,7 @@ module.exports = {
                 const embed2 = new Discord.MessageEmbed()
                         .setColor(process.env.EMBEDCOLOR)
                         .setAuthor("License Manager Information", message.client.user.avatarURL())
-                        .addField("Products", text)
+                        .addField("Products \n", text)
                         .setFooter("Each product's ProductID is marked in (Brackets)")
                 message.channel.send(embed2)
         },

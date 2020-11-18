@@ -28,6 +28,7 @@ module.exports = {
                 } else {
                         let file = editJsonFile("./links.json")
                         let file2 = editJsonFile("./products.json")
+                        let file3 = editJsonFile("./megalinks.json")
                         const person = file.get("links." + message.mentions.members.first().id)
                         if (!person) {
                                 const embed2 = new Discord.MessageEmbed()
@@ -45,6 +46,7 @@ module.exports = {
                                                 return;
                                         } else {
                                                 const product = file2.get("products." + args[1].toLowerCase())
+                                                const link = file3.get("links." + args[1].toLowerCase())
                                                 if (!product) {
                                                         const embed2 = new Discord.MessageEmbed()
                                                                 .setColor(process.env.EMBEDCOLOR)
@@ -73,7 +75,7 @@ module.exports = {
                                                         const embed = new Discord.MessageEmbed()
                                                                 .setColor(process.env.EMBEDCOLOR)
                                                                 .setAuthor("You have been granted a license!", message.client.user.avatarURL())
-                                                                .setDescription("You have now been granted a license for `" + product.name + "`. We hope you enjoy your product!");
+                                                                .setDescription("You have now been granted a license for `" + product.name + "`. We hope you enjoy your product! \n \n **Download it Here: COMING SOON!**" + (file3.get("links." + args[1].toLowerCase() + ".mega")) + "");
                                                         userrr.send(embed)
                                                 }
                                         }

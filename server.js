@@ -1,5 +1,6 @@
 const fs = require('fs');
-const keep_alive = require('./keep_alive.js');
+
+const keep_alive = require('./keep_alive.js')
 const express = require('express');
 const app = express()
 const axios = require("axios")
@@ -95,7 +96,7 @@ app.get("/" + process.env.LINKCODEENDPOINT + "/:robloxid", function (req, res) {
   }
 })
 
-app.get("/whitelisted/:productid/:robloxid", function (req, res) {
+app.get("/whitelisted/:productid/:robloxid", function(req, res) {
   let file = editJsonFile(`./links.json`)
   let file3 = editJsonFile(`./products.json`)
   const person = file.get("links." + req.params.robloxid)
@@ -131,16 +132,16 @@ app.get("/whitelisted/:productid/:robloxid", function (req, res) {
   }
 })
 
-app.get("/" + process.env.FETCHOWNERSHIPENDPOINT + "/:robloxid",function(req,res){
+app.get("/" + process.env.FETCHOWNERSHIPENDPOINT + "/:robloxid", function(req, res) {
   let file = editJsonFile(`./products.json`)
   let lol = file.get("products")
   let text = {
-    "status" : "good"
+    "status": "good"
   }
   for (var k in lol) {
-    if(lol[k].users[req.params.robloxid]) {
+    if (lol[k].users[req.params.robloxid]) {
       text[lol[k].hubid] = {
-        "product" : lol[k].hubid,
+        "product": lol[k].hubid,
         "owns": "yes"
       }
     }
@@ -148,7 +149,7 @@ app.get("/" + process.env.FETCHOWNERSHIPENDPOINT + "/:robloxid",function(req,res
   res.status(200).json(text)
 })
 
-app.get("/whitelist/" + process.env.WHITELISTKEY + "/giveproduct/:robloxid/:product", function (req, res) {
+app.get("/whitelist/" + process.env.WHITELISTKEY + "/giveproduct/:robloxid/:product", function(req, res) {
   let file = editJsonFile(`./links.json`)
   let file3 = editJsonFile(`./products.json`)
   const person = file.get("links." + req.params.robloxid)
@@ -172,7 +173,7 @@ app.get("/whitelist/" + process.env.WHITELISTKEY + "/giveproduct/:robloxid/:prod
         file3.set("products." + req.params.product.toString().toLowerCase() + ".users." + person.roblox + ".userid", person.roblox)
         file3.save()
         axios.get("https://users.roblox.com/v1/users/" + person.roblox)
-          .then(function (callback2) {
+          .then(function(callback2) {
             const finalembed = new Discord.MessageEmbed()
               .setColor(process.env.EMBEDCOLOR)
               .setAuthor("License Granted", client.guilds.resolve(process.env.PRIMARYGUILD).iconURL())
@@ -185,17 +186,18 @@ app.get("/whitelist/" + process.env.WHITELISTKEY + "/giveproduct/:robloxid/:prod
         const embed = new Discord.MessageEmbed()
           .setColor(process.env.EMBEDCOLOR)
           .setAuthor("Thanks for your Purchase!", client.guilds.resolve(process.env.PRIMARYGUILD).iconURL())
-          .setDescription("You have now been granted a license for `" + product.name + "`. We hope you enjoy your purchase!");
+          .setDescription("You have now been granted a license for `" + product.name + "`. We hope you enjoy your product! \n \n **Download it Here:" + megalinks.mega + "");
         userrr.send(embed)
         var response = {
           "status": "success"
         }
         res.status(200).json(response)
       })
-        .catch(err)
+        .catch(error)
     }
   }
 })
+
 
 client.on('error', console.error)
 app.listen(process.env.PORT || 8080)
